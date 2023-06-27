@@ -1,5 +1,5 @@
 # liboqs-php
-This repository documents the process of building the PHP extension of [libOQS](https://github.com/open-quantum-safe/liboqs) library from OpenQuantumSafe organization.
+This repository documents the process of building the PHP extension of [libOQS](https://github.com/open-quantum-safe/liboqs) library from OpenQuantumSafe organization. Very similar one for Python is [here](https://github.com/Muzosh/liboqs-python).
 
 ## Prerequisites
 You will need to build liboqs itself. Basically follow the steps in https://github.com/open-quantum-safe/liboqs#quickstart (no need to build with some modified -D arguments).
