@@ -6,7 +6,7 @@ You will need to build liboqs itself. Basically follow the steps in https://gith
 
 ## Installation
 1. Clone this repository
-1. Define liboqs root directory in compile.sh (LIBOQS_ROOT_DIR)
+1. Define liboqs root directory environment variable: `export LIBOQS_ROOT_DIR=/home/user/liboqs`
 1. Run compile.sh
 1. Add this line to your php.ini file: `extension=/path/to/this/repository/build/oqsphp.so`
 1. (Optional) Copy `oqsphp_stub.php` to your project directory in order to expose classes and functions to your PHP code
