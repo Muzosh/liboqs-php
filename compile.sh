@@ -2,8 +2,6 @@
 rm -rf build
 mkdir -p build
 
-LIBOQS_ROOT_DIR="/home/muzosh/liboqs"
-
 # Compile the C++ wrapper
 swig -php -c++ -o ./build/oqsphp_wrap.cpp -I$LIBOQS_ROOT_DIR/build/include oqsphp.i
 
