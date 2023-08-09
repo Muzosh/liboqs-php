@@ -35,3 +35,5 @@ $status = $kem->encapsulate($ciphertext, $shared_secret, $public_key);
 assert($status == OQS_SUCCESS, $alg);
 $status = $kem->decapsulate($shared_secret2, $ciphertext, $private_key);
 assert($status == OQS_SUCCESS, $alg);
+
+assert($shared_secret == $shared_secret2, $alg);
