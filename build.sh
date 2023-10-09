@@ -2,6 +2,17 @@
 rm -rf build
 mkdir -p build
 
+if [ -e "liboqs" ]; then
+    echo "liboqs directory already exists, skipping cloning"; \
+else \
+    git clone -b main https://github.com/open-quantum-safe/liboqs.git; \
+fi
+
+cmake -GNinja -B liboqs/build liboqs && ninja -j $(nproc) -C liboqs/build
+
+# Set the path to the liboqs root directory
+LIBOQS_ROOT_DIR="liboqs"
+
 # Compile the C++ wrapper
 swig -php -c++ -o ./build/oqsphp_wrap.cpp -I$LIBOQS_ROOT_DIR/build/include oqsphp.i
 
