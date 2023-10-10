@@ -5,7 +5,7 @@ mkdir -p build
 if [ -e "liboqs" ]; then
     echo "liboqs directory already exists, skipping cloning"; \
 else \
-    git clone -b main https://github.com/open-quantum-safe/liboqs.git; \
+    git submodule update --init --remote --recursive; \
 fi
 
 cmake -GNinja -B liboqs/build liboqs && ninja -j $(nproc) -C liboqs/build
