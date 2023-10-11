@@ -11,7 +11,7 @@ else \
     export LIBOQS_ROOT=$(pwd)/liboqs; \
 fi
 
-if [[ -e "$LIBOQS_ROOT/build" ]]; then
+if [[ -e "$LIBOQS_ROOT/build/lib/liboqs.a" ]]; then
     echo "liboqs library already builded, skipping compilation"; \
 else \
     rm -rf $LIBOQS_ROOT/build; \
