@@ -8,12 +8,12 @@ This repository documents the process of building the PHP extension of [libOQS](
 2. If you already have libOQS repository on the system, specify its location by `export LIBOQS_ROOT=/path/to/liboqs`
 3. Run `build.sh`
 4. Add this line to your php.ini file: `extension=/path/to/this/repository/build/oqsphp.so` (or copy `./build/oqsphp.so` wherever you like)
-5. (Optional) Copy `oqsphp_stub.php` to your project directory in order to expose classes and functions to your PHP code
+5. (Optional) Copy `oqsphp.php` to your project directory in order to expose classes and functions to your PHP code
     - this step is purely for developer's convenience, you can still use the extension without it (but your IDE will throw undefined class/function warnings)
 
 ## Exposed classes and functions
 
-See `oqsphp_stub.php`
+See `oqsphp.php`
 
 ## Example
 
