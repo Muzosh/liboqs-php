@@ -12,7 +12,7 @@ else \
 fi
 
 if [[ -e "$LIBOQS_ROOT/build/lib/liboqs.a" ]]; then
-    echo "liboqs library already builded, skipping compilation"; \
+    echo "liboqs library already built, skipping compilation"; \
 else \
     rm -rf $LIBOQS_ROOT/build; \
     cmake -GNinja -B $LIBOQS_ROOT/build $LIBOQS_ROOT && ninja -j $(nproc) -C $LIBOQS_ROOT/build; \
